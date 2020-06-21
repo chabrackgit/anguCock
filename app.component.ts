@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Cocktail } from './cocktail';
+import { Cocktail } from './shared/cocktail.model';
 
 @Component({
   selector: 'app-root',
@@ -9,5 +9,5 @@ import { Cocktail } from './cocktail';
 export class AppComponent {
   title = 'cocktails';
 
-  cocktail = new Cocktail("mojito");
+  cocktail = new Cocktail('Mojito','https://upload.wikimedia.org/wikipedia/commons/0/01/Mojito98775.jpeg','description mojito');
 }
